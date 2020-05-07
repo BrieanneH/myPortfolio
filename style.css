@@ -1,0 +1,50 @@
+.navbar{
+  background-color: cornflowerblue;
+  border-bottom: 6px cornflowerblue !important;
+  box-sizing: border-box;
+}
+.img{
+  height:20px;
+  width: 20px;
+}
+.jumbotron{
+
+    height: 100vh;
+    background-color: thistle;
+}
+
+
+
+.typewriter h1{
+  
+  color: cornflowerblue;
+  display: inline-block;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: .10em;
+  animation:typing 1.2s steps(30, end),
+  blink .70s step-end infinite;
+  white-space: nowrap;
+  font-size: 70px;
+  font-weight: 900px;
+  border-right: 5px solid cornflowerblue; /* The typwriter cursor */
+  box-sizing: border-box;
+ }
+  
+  
+   @keyframes typing{
+    from{
+      width: 0% 
+    }
+    
+
+    to{
+      width: 15%
+    }
+   }
+
+  @keyframes blink{
+    from,to 
+      {border-right-color: rgba(131, 57, 57, 0.75);}
+    50%{border-right-color: transparent;}
+  }
