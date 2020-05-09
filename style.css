@@ -2,6 +2,13 @@
   background-color: cornflowerblue;
   border-bottom: 6px cornflowerblue !important;
   box-sizing: border-box;
+
+}
+
+.nav-link {
+  color:purple;
+
+
 }
 .img{
   height:20px;
