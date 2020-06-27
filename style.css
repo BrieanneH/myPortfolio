@@ -1,13 +1,19 @@
+.body{
+  background-color: lightblue;
+}
+
 .navbar{
-  background-color: cornflowerblue;
+  color: lightblue !important;
 
   box-sizing: border-box;
-  border-bottom: 6px solid red;
+  border-bottom: 11px solid lightskyblue;
 
 }
 
 .nav-link {
-  color:purple;
+  color:seashell;
+  padding: 9px;
+  background-color:lightskyblue;
 
 
 }
@@ -22,7 +28,7 @@
 
     height: 100vh;
    
-    background-image: url('assets/images/YNPcrop.jpg');
+    background-image: url(assets/images/minDesk.jpg);
 
     /* Full height */
 
@@ -38,10 +44,10 @@
 
 .typewriter h1{
   
-  color: cornflowerblue;
+  color: sandybrown;
   display: inline-block;
   overflow: hidden;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   letter-spacing: .10em;
   animation:typing 1.2s steps(30, end),
   blink .70s step-end infinite;
@@ -68,4 +74,27 @@
     from,to 
       {border-right-color: rgba(131, 57, 57, 0.75);}
     50%{border-right-color: transparent;}
+  }
+
+
+  #one{
+    padding:8px;
+    border-bottom: solid 4px rgb(236, 138, 195);
+  }
+
+  #two{
+    padding:8px;
+    border-bottom: solid 4px rgb(236, 138, 195);
+
+  }
+
+  #three{
+    padding:8px;
+    border-bottom: solid 4px rgb(236, 138, 195);
+
+  }
+
+  .myPhoto{
+      border-radius: 50%;
+    
   }
