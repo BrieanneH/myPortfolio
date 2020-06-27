@@ -40,42 +40,63 @@
     background-size: cover;
 }
 
-
-
-.typewriter h1{
-  
-  color: sandybrown;
-  display: inline-block;
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: rgb(83, 160, 195);
+  font-family: Roboto, Arial, sans-serif;
+  height: 70vmin;
+  left: 30%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vmin;
+}
+.animated-title > div {
+  height: 50%;
   overflow: hidden;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  letter-spacing: .10em;
-  animation:typing 1.2s steps(30, end),
-  blink .70s step-end infinite;
-  white-space: nowrap;
-  font-size: 70px;
-  font-weight: 900px;
-  border-right: 5px solid cornflowerblue; /* The typwriter cursor */
-  box-sizing: border-box;
- }
-  
-  
-   @keyframes typing{
-    from{
-      width: 0% 
-    }
-    
-
-    to{
-      width: 15%
-    }
-   }
-
-  @keyframes blink{
-    from,to 
-      {border-right-color: rgba(131, 57, 57, 0.75);}
-    50%{border-right-color: transparent;}
-  }
-
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.top-text {
+  border-bottom: 1vmin solid rgb(236, 171, 86);
+  top: 0;
+}
+.animated-title > div.top-text div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.top-text div span:first-child {
+  color: rgb(206, 117, 171);
+}
+.animated-title > div.bottom-text {
+  bottom: 0;
+}
+.animated-title > div.bottom-text div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
 
   #one{
     padding:8px;
