@@ -22,6 +22,11 @@
   width: 20px;
 }
 
+#underline{
+  border-bottom: 8px solid;
+  color: pink;
+
+}
 
 
 .jumbotron{
@@ -97,25 +102,57 @@
   top: 0;
   transform: translate(0, -100%);
 }
+/* portfolio border*/
+.h4{
 
-  #one{
-    padding:8px;
-    border-bottom: solid 4px rgb(236, 138, 195);
+  color: rgb(206, 117, 171);
+  font-weight: 700;
+  font-size: 50px;
+  font-family: sans-serif;
+  text-transform: lowercase;
+}
+  
+
+/* portfolio grid */
+  .row {
+    margin: 8px -16px;
   }
-
-  #two{
-    padding:8px;
-    border-bottom: solid 4px rgb(236, 138, 195);
-
+  
+  
+  .row,
+  .row > .col {
+    padding: 8px;
   }
-
-  #three{
-    padding:8px;
-    border-bottom: solid 4px rgb(236, 138, 195);
-
+  
+  
+  .col {
+    float: left;
+    width: 25%;
   }
+  
 
-  .myPhoto{
-      border-radius: 50%;
-    
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+ 
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+ 
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
   }
